@@ -36,6 +36,6 @@ app.use(cors())
     })
 })
 
-app.listen(5000,(err,res)=>{
+app.listen(process.env.PORT||5000,(err,res)=>{
     (err) ? console.log("Error" ) :(console.log("server is running "))
 })
